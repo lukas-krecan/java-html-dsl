@@ -1,17 +1,28 @@
 package com.benjiweber.html;
 
-import com.benjiweber.html.tags.P;
-import com.benjiweber.html.values.PixelMeasurement;
 import org.junit.Test;
 
+import static com.benjiweber.html.HtmlDsl.article;
+import static com.benjiweber.html.HtmlDsl.body;
+import static com.benjiweber.html.HtmlDsl.h1;
+import static com.benjiweber.html.HtmlDsl.head;
+import static com.benjiweber.html.HtmlDsl.html;
+import static com.benjiweber.html.HtmlDsl.img;
+import static com.benjiweber.html.HtmlDsl.li;
+import static com.benjiweber.html.HtmlDsl.link;
+import static com.benjiweber.html.HtmlDsl.meta;
+import static com.benjiweber.html.HtmlDsl.p;
+import static com.benjiweber.html.HtmlDsl.script;
+import static com.benjiweber.html.HtmlDsl.small;
+import static com.benjiweber.html.HtmlDsl.ul;
 import static com.benjiweber.html.values.PixelMeasurement.px;
-import static com.benjiweber.html.values.Rel.*;
-import static com.benjiweber.html.values.Style.*;
-import static com.benjiweber.html.values.ScriptType.*;
+import static com.benjiweber.html.values.Rel.stylesheet;
+import static com.benjiweber.html.values.ScriptType.javascript;
+import static com.benjiweber.html.values.Style.css;
 import static java.util.Arrays.asList;
 import static org.junit.Assert.assertEquals;
 
-public class HtmlDocumentTest implements HtmlDsl {
+public class HtmlDocumentTest {
     @Test
     public void html_example() {
         String doc =
